@@ -4,7 +4,7 @@ from django.views import View
 
 class CVSView(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'cvs_tmp.html', {})
+        return render(request, 'cvs.html', {})
 
 class PostDeliveryView(View):
     def get(self, request, *args, **kwargs):
