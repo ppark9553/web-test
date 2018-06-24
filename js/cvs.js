@@ -20,7 +20,7 @@ var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니�
 
 // axios로 로컬 API 요청 받아오기
 function getDataFromAPI() {
-  axios.get('http://127.0.0.1:8000/api/cvs/')
+  axios.get('http://207.148.94.157/api/cvs/')
   .then( reply => {for(var i=0; i<reply.data.length; i++){
     var data = reply.data[i]
     // 편의점별 데이터 정리 오브젝트

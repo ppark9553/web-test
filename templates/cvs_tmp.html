@@ -226,32 +226,32 @@
       <div id="footer"><font size="7"><center><b>CU & GS25 알림 지도</b></center></font></div>
   </div>
   <form id="filter-form">
-      <input type="image" src="http://127.0.0.1:8000/static/icon/cu.png" id="cu" style=" position : absolute; top : 30px; left:30px; z-index:10; width:80px; height:80px;" />
-      <input type="image" src="http://127.0.0.1:8000/static/icon/gs25.png" id="gs25" style=" position : absolute; top : 30px; left:115px; z-index:10; width:80px; height:80px;" />
-      <input type="image" src="http://127.0.0.1:8000/static/icon/택배 1.png" id="postbox1" style=" position : absolute; top : 30px; left:200px; z-index:10;width:50px; height:80px;" onclick="winOpend(); return false;"/>
-      <input type="image" src="http://127.0.0.1:8000/static/icon/택배 2.png" id="postbox2" style=" position : absolute; top : 30px; left:250px; z-index:10;width:50px; height:80px;" onclick="winOpend(); return false;"/>
-      <input type="image" src="http://127.0.0.1:8000/static/icon/ATM1.png" id="ATM1" style=" position : absolute; top : 30px; left:310px; z-index:10;width:50px; height:80px;" onclick="winOpena(); return false;"/>
-      <input type="image" src="http://127.0.0.1:8000/static/icon/ATM2.png" id="ATM2" style=" position : absolute; top : 30px; left:360px; z-index:10;width:50px; height:80px;" onclick="winOpena(); return false;"/>
-      <input type="image" src="http://127.0.0.1:8000/static/icon/의약품1.png" id="medicine1" style=" position : absolute; top : 30px; left:420px; z-index:10;width:50px; height:80px;" onclick="winOpenm(); return false;"/>
-      <input type="image" src="http://127.0.0.1:8000/static/icon/의약품2.png" id="medicine2" style=" position : absolute; top : 30px; left:470px; z-index:10;width:50px; height:80px;" onclick="winOpenm(); return false;"/>
-      <input type="image" src="http://127.0.0.1:8000/static/icon/로또1.png" id="lotto1" style=" position : absolute; top : 30px; left:530px; z-index:10;width:50px; height:80px;" onclick="winOpenl(); return false;"/>
-      <input type="image" src="http://127.0.0.1:8000/static/icon/로또2.png" id="lotto2" style=" position : absolute; top : 30px; left:580px; z-index:10;width:50px; height:80px;" onclick="winOpenl(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/cu.png" id="cu" style=" position : absolute; top : 30px; left:30px; z-index:10; width:80px; height:80px;" />
+      <input type="image" src="http://207.148.94.157/static/icon/gs25.png" id="gs25" style=" position : absolute; top : 30px; left:115px; z-index:10; width:80px; height:80px;" />
+      <input type="image" src="http://207.148.94.157/static/icon/택배 1.png" id="postbox1" style=" position : absolute; top : 30px; left:200px; z-index:10;width:50px; height:80px;" onclick="winOpend(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/택배 2.png" id="postbox2" style=" position : absolute; top : 30px; left:250px; z-index:10;width:50px; height:80px;" onclick="winOpend(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/ATM1.png" id="ATM1" style=" position : absolute; top : 30px; left:310px; z-index:10;width:50px; height:80px;" onclick="winOpena(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/ATM2.png" id="ATM2" style=" position : absolute; top : 30px; left:360px; z-index:10;width:50px; height:80px;" onclick="winOpena(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/의약품1.png" id="medicine1" style=" position : absolute; top : 30px; left:420px; z-index:10;width:50px; height:80px;" onclick="winOpenm(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/의약품2.png" id="medicine2" style=" position : absolute; top : 30px; left:470px; z-index:10;width:50px; height:80px;" onclick="winOpenm(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/로또1.png" id="lotto1" style=" position : absolute; top : 30px; left:530px; z-index:10;width:50px; height:80px;" onclick="winOpenl(); return false;"/>
+      <input type="image" src="http://207.148.94.157/static/icon/로또2.png" id="lotto2" style=" position : absolute; top : 30px; left:580px; z-index:10;width:50px; height:80px;" onclick="winOpenl(); return false;"/>
   </form>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=80722d36a924951d6192a4ce6d296e6b"></script>
 <script type="text/javascript" src="{% static 'dist/cvs.js' %}"></script>
 <script>
     function winOpend() {
-        window.open("http://127.0.0.1:8000/delivery", "new", "width=550 height=800 scrollbars=yes");
+        window.open("http://207.148.94.157/delivery", "new", "width=550 height=800 scrollbars=yes");
     }
     function winOpena() {
-        window.open("http://127.0.0.1:8000/atm", "new", "width=570 height=800 scrollbars=yes");
+        window.open("http://207.148.94.157/atm", "new", "width=570 height=800 scrollbars=yes");
     }
     function winOpenm() {
-        window.open("http://127.0.0.1:8000/medicine", "new", "width=550 height=800 scrollbars=yes");
+        window.open("http://207.148.94.157/medicine", "new", "width=550 height=800 scrollbars=yes");
     }
     function winOpenl() {
-        window.open("http://127.0.0.1:8000/lotto", "new", "width=550 height=800 scrollbars=yes");
+        window.open("http://207.148.94.157/lotto", "new", "width=550 height=800 scrollbars=yes");
     }
 </script>
 </body>
