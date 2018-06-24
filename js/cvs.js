@@ -125,5 +125,32 @@ document.addEventListener('DOMContentLoaded', getDataFromAPI()) // 웹사이트�
 
 document.addEventListener("submit", e => {
   e.preventDefault()
-  console.log(e)
+})
+
+document.addEventListener('click', e => {
+
+  if (e.target.id == 'cu') {
+    console.log('clicked cu')
+  }
+
+  else if (e.target.id == 'gs25') {
+    console.log('clicked gs25')
+  }
+
+  else if ((e.target.id == 'postbox1') || (e.target.id == 'postbox2')) {
+    console.log('clicked postbox')
+  }
+
+  else if ((e.target.id == 'ATM1') || (e.target.id == 'ATM2')) {
+    console.log('clicked ATM')
+  }
+
+  else if ((e.target.id == 'medicine1') || (e.target.id == 'medicine2')) {
+    console.log('clicked medicine')
+  }
+
+  else if ((e.target.id == 'lotto1') || (e.target.id == 'lotto2')) {
+    console.log('clicked lotto')
+  }
+
 })

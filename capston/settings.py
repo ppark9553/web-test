@@ -25,7 +25,7 @@ SECRET_KEY = '9d%srt73(2x&r=r-k=s0+hallce4%&_+kd2+)cj%d+8hbd(_3m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['207.148.94.157', '127.0.0.1', '127.0.1.1']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'capston.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join('templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
